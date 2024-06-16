@@ -4,7 +4,7 @@ import pandas as pd
 import ast
 
 
-bot = telebot.TeleBot('7143887902:AAF95642pcw34y2Gffv3oDfMHDgf-SRt7Mo')
+bot = telebot.TeleBot('ваш токен')
 
 RT = Node()
 
@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     results = results.dropna(subset=['ingredients'])  # удаляем строки с пустыми значениями в столбце 'ingredients'
 
-    for i in range(50000):
+    for i in range(len(results)):
         try:
             ingredients_str = results['ingredients'][i]
         except KeyError:
