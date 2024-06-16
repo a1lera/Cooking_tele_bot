@@ -1,6 +1,5 @@
-MAXN = 100000
+MAXN = 144742
 TOL = 1
-LEN = 10
 ptr = 0
 
 
@@ -8,7 +7,7 @@ class Node:
     def __init__(self, x=None, recipe=None):
         self.keys = x  # список ключей
         self.recipe = recipe  # соответствующая информация о рецепте
-        self.next = [0] * 1000
+        self.next = [0] * 100
 
     def __repr__(self):
         return f"Node({self.keys}, {self.recipe})"
