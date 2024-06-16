@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     results = results.dropna(subset=['ingredients'])  # удаляем строки с пустыми значениями в столбце 'ingredients'
 
-    for i in range(50000):
+    for i in range(len(results)):
         try:
             ingredients_str = results['ingredients'][i]
         except KeyError:
