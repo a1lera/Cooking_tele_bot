@@ -1,4 +1,4 @@
-#Cooking_tele_bot
+Cooking_tele_bot
 
 Телебот для поиска рецепта по названиям ингридиента на python.
 
