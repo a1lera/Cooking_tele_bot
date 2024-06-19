@@ -45,6 +45,6 @@ class RecipeBot:
 
 if __name__ == "__main__":
     dataset_loader = DatasetLoader('recipes - recipes.csv')
-    bot = RecipeBot('7143887902:AAF95642pcw34y2Gffv3oDfMHDgf-SRt7Mo', dataset_loader)
+    bot = RecipeBot('Ваш токен', dataset_loader)
     bot.start()
     bot.run()
