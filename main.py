@@ -7,7 +7,7 @@ class Node:
     def __init__(self, x=None, recipe=None):
         self.keys = x  # список ключей
         self.recipe = recipe  # соответствующая информация о рецепте
-        self.next = [0] * 100
+        self.next = [0] * 100  # массив индексов дочерних узлов
 
     def __repr__(self):
         return f"Node({self.keys}, {self.recipe})"
