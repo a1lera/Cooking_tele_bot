@@ -74,7 +74,6 @@ def edit_distance(a, b):
                 dp[i][j] = min(
                     dp[i - 1][j] + 1,  # удаление
                     dp[i][j - 1] + 1,  # вставка
-                    dp[i - 1][j - 1] + 1    # замена
                 )
             else:
                 dp[i][j] = dp[i - 1][j - 1]
